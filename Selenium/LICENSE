@@ -1,0 +1,33 @@
+{
+  "id": "1cc0cdd0-1675-49d5-84c1-e9ef10633057",
+  "version": "2.0",
+  "name": "Aeries Interview",
+  "url": "",
+  "tests": [{
+    "id": "d4586844-e611-4b0d-9ba0-29f51409247b",
+    "name": "Load home",
+    "commands": [{
+      "id": "d9831147-783b-4e65-8f2d-c1a4d40d860d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.md\\3Ah-8",
+      "targets": [
+        ["css=.md\\3Ah-8", "css:finder"],
+        ["xpath=//img[@alt='Aeries Software']", "xpath:img"],
+        ["xpath=//div[@id='app']/header/div/div/h1/a/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ae9346ae-434f-417e-ab30-5503c98a83d9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": [],
+  "plugins": []
+}
