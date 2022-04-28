@@ -1,0 +1,53 @@
+{
+  "id": "d44df5b2-7387-48b8-9c8d-11e1be416501",
+  "version": "2.0",
+  "name": "Aeries",
+  "url": "https://aeries.com",
+  "tests": [{
+    "id": "21d9c479-f92b-47da-a5db-e0b53ef03090",
+    "name": "Initial test",
+    "commands": [{
+      "id": "709bb1a8-5ae8-42f2-b8db-3f92a5f94e2c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.logo",
+      "targets": [
+        ["css=.logo", "css:finder"],
+        ["xpath=//div[@id='app']/header/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"]
+      ],
+      "value": "5000"
+    }]
+  }, {
+    "id": "8146ca25-3f85-4040-8ea2-c57792b4ea74",
+    "name": "Check About Page",
+    "commands": [{
+      "id": "3232106f-dd79-40bb-a72f-1e0c5cc3d386",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "",
+      "targets": [],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "Selenium IDE Test Preparation",
+      "windowTimeout": 2000
+    }, {
+      "id": "9a7b01ec-5e3d-407c-beb5-249f953689ba",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0737f20b-aa0f-4c9a-b701-12bb02369739",
+    "name": "",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["21d9c479-f92b-47da-a5db-e0b53ef03090"]
+  }],
+  "urls": ["https://aeries.com/"],
+  "plugins": []
+}
