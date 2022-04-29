@@ -1,0 +1,47 @@
+{
+  "id": "c9f9d82e-c3b3-482d-8fd3-068fede484d1",
+  "version": "2.0",
+  "name": "aeries-Interview",
+  "url": "https://aeries.com",
+  "tests": [{
+    "id": "d2f92377-2cbf-444c-bab3-c5c33928d5b6",
+    "name": "About Us Test",
+    "commands": [{
+      "id": "a1b9c845-7a86-41a1-8150-a531946a0f1d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80f459c5-3259-4c68-a74e-8ec68411a5d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1031x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c684c7c-8d03-48cd-a14d-1f533b57b033",
+      "comment": "",
+      "command": "click",
+      "target": "css=.md\\3Atext-display",
+      "targets": [
+        ["css=.md\\3Atext-display", "css:finder"],
+        ["xpath=//div[@id='app']/main/section/div/div/h1", "xpath:idRelative"],
+        ["xpath=//section/div/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Delivering data-driven, intuitive, and innovative solutions that empower communities to advance student success.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4fcd7396-ed57-4fde-95c5-14096f2a427f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d2f92377-2cbf-444c-bab3-c5c33928d5b6"]
+  }],
+  "urls": [],
+  "plugins": []
+}
